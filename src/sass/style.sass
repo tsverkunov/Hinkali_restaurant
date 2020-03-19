@@ -1,3 +1,113 @@
 body
 	font-family: Konung, sans-serif 
+	background: url(../../img/home_page/background_2.png) no-repeat
+	background-size: cover
+	background-position: center
+	height: 100%
+
+.header
+	border-bottom: 2px solid rgba(255, 255, 255, .2)
+
+	&__wrapp
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		align-items: center
+		justify-items: center
+		height: 176px
+		max-width: 1620px
+		margin: 0 auto
+		color: #E3C597
+		padding: 0	50px
+		img
+			max-height: 110px
+
+	&__adress
+		display: flex
+		font-size: 20px
+		line-height: 36px
+		justify-self: left
+		img
+			position: relative
+			bottom: 4px
+			right: 15px
+
+	&__phone
+		font-size: 34px
+		line-height: 61px
+		justify-self: right
+		text-decoration: none
+		color: #E3C597
 	
+.main
+	a
+		text-decoration: none
+		color: #fff
+		transition: all .2s
+	a:hover
+		color: #E3C597
+	&__wrapp 
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: minmax(820px, auto)
+		color: #fff
+		font-size: 80px
+		line-height: 144px
+
+
+.restaurant
+	display: grid
+	text-align: center
+	align-items: center
+	height: 100%
+	border-right: 2px solid rgba(255, 255, 255, .2)	
+.restaurant:hover
+	background: rgba(33, 34, 28, 0.2)
+	backdrop-filter: blur(15px)
+
+
+.delivery
+	display: grid
+	align-items: center
+	text-align: center
+	height: 100%
+.delivery:hover
+	background: rgba(33, 34, 28, 0.2)
+	backdrop-filter: blur(15px)
+
+
+
+
+.footer 
+	// position: fixed
+	// left: 0
+	// bottom: 0
+	border-top: 2px solid rgba(255, 255, 255, .2)		
+
+	&__body 
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: minmax(80px, auto)
+		justify-items: center
+		align-items: center
+		position: relative
+
+	&__security 
+		display:grid
+		color: #FFF
+		p
+			opacity: .4
+
+		margin-left: 300px
+	&__icos 
+		margin-right: 300px
+	&__ico
+		opacity: .4
+
+	&__img-left
+		position: absolute
+		left: 0
+		bottom: 0	
+	&__img-right
+		position: absolute
+		right: 0
+		bottom: 0	
