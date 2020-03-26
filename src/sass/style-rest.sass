@@ -18,7 +18,6 @@
 		justify-items: center
 		height: 180px
 		color: #E3C597
-
 		img
 			max-height: 110px
 
@@ -46,36 +45,34 @@
 .btns 
 	display: flex
 	justify-content: flex-end
-	color: $TextColor
-	font-size: 18px
-.btn-restaurant 
+.btn-restaurant, .btn-delivery
 	display: flex
 	align-items: center
 	justify-content: center
 	width: 290px
 	height: 60px
-	background-color:#21221C
-	border-bottom-left-radius: 60px
-	border-bottom-right-radius: 60px
-	margin-right: 20px
-.btn-delivery 
-	display: flex
-	align-items: center
-	justify-content: center	
-	width: 290px
-	height: 60px
+	font-size: 18px
 	background-color: $TextColor
 	border-bottom-left-radius: 60px
 	border-bottom-right-radius: 60px
-	color: $HeaderC
-// header__end
+	margin-right: 20px
+	a
+		text-decoration: none
+		color: $HeaderC
 
-// main_block_start
+.current
+	background-color: $HeaderC 
+	a 
+    	color: $TextColor	
+
 .sticker
-	margin-left: 30px	
+	margin: 0 0 10px 30px
 	a
 		text-decoration: none
 		color: #21221C
+// header__end
+
+// main_block_start		
 .main-rest 
 	&__block
 		display: flex
@@ -90,7 +87,6 @@
 			line-height: 160%
 			color: #6A6A6A
 			margin-bottom: 80px
-
 	&__title
 	&__text
 	&__gallery-title
@@ -110,7 +106,7 @@
 		display: flex	
 .btn-menu, .btn-bar, .btn-activity
 	background-color: #E3C597
-	margin: 0 50px 146px 0
+	margin: 0 50px 150px 0
 	border-radius: 25px
 	padding: 0 30px
 	img
@@ -120,6 +116,7 @@
 	a
 		text-decoration: none
 		color: #21221C
+
 
 .reserve-table
 	font-size: 28px
@@ -131,7 +128,6 @@
 		text-decoration: none
 		position: relative
 		color: #21221C
-
 
 .reserve-table 	a::after
 	position: absolute
@@ -157,6 +153,7 @@
 	&__icos
 		color: #000
 	&__ico
+		margin: 0 0 0 18px
 
 // footer_end
 

@@ -1,0 +1,167 @@
+
+
+.wrapper-rest 
+.menu-cards
+	display: grid
+	grid-template-columns: repeat(3, 1fr)
+	grid-gap: 30px
+	margin: 60px 0 150px 0
+
+
+.card_1, .card_2, .card_3, .card_4, .card_5, .card_6
+	width: 520px
+	height: 300px
+	position: relative
+	text-align: right
+	border: 8px solid #E3C597
+	box-sizing: border-box
+	border-radius: 2px
+	font-family: 'Konung Dan'
+	a
+		text-decoration: none
+		color: #000
+		display: block
+	span
+		font-size: 36px
+		line-height: 100px
+		margin: 0 50px 0 0 
+	img	
+		position: absolute
+		left: -8px
+		bottom: -8px		
+
+.card_5:hover
+	background-image: url(../../img/delivery/cards/05.png)
+	background-position: center
+	border: none
+	a
+		color: #fff
+	span
+		line-height: 116px
+		margin: 0 58px 0 0 
+	img
+		display: none
+
+
+
+
+
+.production
+
+	&__main-title
+		font-size: 36px
+		line-height: 145%
+		margin: 60px 0 60px 0
+		font-family: 'Konung Dan'
+	&__cards 
+		display: grid
+		grid-template-columns: repeat(4, 380px) 
+		grid-column-gap: 33px
+		grid-row-gap: 40px
+		align-items: center
+		justify-content: center
+		margin: 60px 0
+
+	&__card 
+		justify-content: center 
+		width: 380px
+		height: 680px
+		transition: all .1s
+	&__card:hover
+		box-shadow:	0 0 12px rgba(0, 0, 0, 0.4)
+
+	&__img 
+		width: 380px
+		justify-content: center
+	&__title 
+		display: flex
+		flex-direction: column
+		margin: 0 30px
+
+
+		h3
+			display: flex
+			align-items: center
+			justify-content: left
+			font-size: 26px
+			line-height: 145%
+			margin: 20px 0 
+			height: 100px
+			font-family: 'Konung Dan'
+
+		p
+			font-size: 16px
+			line-height: 160%
+		span
+			color: #6A6A6A 
+			font-size: 16px
+			line-height: 160%
+	&__title::after
+		content: ''
+		width: 320px
+		height: 1px
+		background: #E3C597	
+		margin: 20px 0
+		align-items: center
+					
+	&__price 
+		display:  flex
+		justify-content: space-between
+		align-items: flex-end
+		margin: 0 30px 150px 30px
+	
+	&__price-style
+		font-size: 36px
+
+	&__price-mass
+		color: #6A6A6A
+		font-size: 20px
+		text-align: right
+	&__buttons
+		display: none
+		align-items: center
+		margin: 0 30px
+		position: relative
+		bottom: 140px
+		button
+			height: 45px
+			width: 30px
+			font-size: 0
+			border: 1px solid #DCDCDC
+			box-sizing: border-box
+			border-radius: 1px
+		input
+			border: 0
+			width: 35px
+			text-align: center
+			// padding: 0 12px
+
+.btn-minus
+	background: url(../../img/delivery/cards/minus_icon.svg) no-repeat 
+	background-position: center
+	// background-size: 50%
+.btn-plus			
+	background: url(../../img/delivery/cards/plus_icon.svg) no-repeat
+	background-position: center
+	// background-size: 50%
+
+.btn-by
+	background-color: #E3C597
+	margin: 50px 10px 
+	border-radius: 25px
+	padding: 0 30px
+	width: 160px
+	img
+		position: relative
+		top: -16px
+		right: 8px 
+	a
+		text-decoration: none
+		color: #21221C	
+		font-size: 22px
+		line-height: 40px
+		display: block
+
+
+				
+
