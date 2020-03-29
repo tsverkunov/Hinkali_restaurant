@@ -42,8 +42,29 @@
 	img
 		display: none
 
-
-
+.line 
+	width: 1620px
+	height: 2px
+	border-radius: 1px
+	background-color: #E3C597
+	position: relative
+	top: 760px
+.line::before
+	content: ''
+	width: 1620px
+	height: 2px
+	border-radius: 1px
+	background-color: #E3C597
+	position: absolute
+	top: 720px
+.line::after
+	content: ''
+	width: 1620px
+	height: 2px
+	border-radius: 1px
+	background-color: #E3C597
+	position: absolute
+	top: 1440px	
 
 
 .production
@@ -134,7 +155,6 @@
 			border: 0
 			width: 35px
 			text-align: center
-			// padding: 0 12px
 
 .btn-minus
 	background: url(../../img/delivery/cards/minus_icon.svg) no-repeat 
@@ -162,6 +182,37 @@
 		line-height: 40px
 		display: block
 
+.btns-pages
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	button
+		background-position: center
+		height: 45px
+		width: 30px
+		font-size: 0
+		border: 0	
+	
+.num-page
+	display: flex
+	height: 45px
+	width: 40px
+	border: none
+	margin: 0 5px
+	align-items: center
+	justify-content: center
+	cursor: pointer
+.btn-left
+	background: url(../../img/delivery/btn/prev.svg) no-repeat
+	margin: 0 20px 0 0
+
+.btn-right
+	background: url(../../img/delivery/btn/next.svg) no-repeat
+	margin: 0 0 0 20px
+
+.num-active
+	border: 1px solid #E3C597
+	color: #E3C597
 
 				
 

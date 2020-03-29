@@ -10,7 +10,8 @@ const gcmq = require('gulp-group-css-media-queries');
 const babel = require('gulp-babel');
 
 const jsFiles = [
-	'./src/js/main.js'	
+	'./src/js/slick.min.js',
+	'./src/js/main.js'
 ];
 
 function styles(){
