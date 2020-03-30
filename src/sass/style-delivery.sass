@@ -1,19 +1,20 @@
 
 
 .wrapper-rest 
+
+// Категории блюд	!!!!!!!!!!!!!!!!!!!!!!!!!!
 .menu-cards
 	display: grid
 	grid-template-columns: repeat(3, 1fr)
 	grid-gap: 30px
 	margin: 60px 0 150px 0
 
-
 .card_1, .card_2, .card_3, .card_4, .card_5, .card_6
 	width: 520px
 	height: 300px
 	position: relative
 	text-align: right
-	border: 8px solid #E3C597
+	outline: 8px solid #E3C597
 	box-sizing: border-box
 	border-radius: 2px
 	font-family: 'Konung Dan'
@@ -28,20 +29,74 @@
 	img	
 		position: absolute
 		left: -8px
-		bottom: -8px		
+		bottom: -8px	
+	svg
+		position: absolute
+		left: -8px
+		bottom: -8px	
 
-.card_5:hover
-	background-image: url(../../img/delivery/cards/05.png)
+.card_1:hover,.card_2:hover,.card_3:hover,
+.card_4:hover,.card_5:hover,.card_6:hover
+	background-image: url(../../img/delivery/cards/background_card.png)
 	background-position: center
-	border: none
-	a
-		color: #fff
+	outline: 0
 	span
-		line-height: 116px
-		margin: 0 58px 0 0 
-	img
-		display: none
+		color: #FFF
+	g
+		rect
+			fill: #fff
 
+// Для разного background при hover!!!!!!!!!!!!!!!!!!!!!!			
+// .card_2:hover
+// 	background-image: url(../../img/delivery/cards/background_card.png)
+// 	background-position: center
+// 	outline: 0
+// 	span
+// 		color: #FFF
+// 	g
+// 		rect
+// 			fill: #fff	
+// .card_3:hover
+// 	background-image: url(../../img/delivery/cards/background_card.png)
+// 	background-position: center
+// 	outline: 0
+// 	span
+// 		color: #FFF
+// 	g
+// 		rect
+// 			fill: #fff	
+// .card_4:hover
+// 	background-image: url(../../img/delivery/cards/background_card.png)
+// 	background-position: center
+// 	outline: 0
+// 	span
+// 		color: #FFF
+// 	g
+// 		rect
+// 			fill: #fff
+// .card_5:hover
+// 	background-image: url(../../img/delivery/cards/background_card.png)
+// 	background-position: center
+// 	outline: 0
+// 	span
+// 		color: #FFF
+// 	g
+// 		rect
+// 			fill: #fff				
+// .card_6:hover
+// 	background-image: url(../../img/delivery/cards/background_card.png)
+// 	background-position: center
+// 	outline: 0
+// 	span
+// 		color: #FFF
+// 	g
+// 		rect
+// 			fill: #fff	
+
+.cards-icons-top
+
+
+// Карточки товаров!!!!!!!!!!!!!!!!!!!!!!!!!!
 .line 
 	width: 1620px
 	height: 2px
@@ -98,8 +153,6 @@
 		display: flex
 		flex-direction: column
 		margin: 0 30px
-
-
 		h3
 			display: flex
 			align-items: center
@@ -109,7 +162,6 @@
 			margin: 20px 0 
 			height: 100px
 			font-family: 'Konung Dan'
-
 		p
 			font-size: 16px
 			line-height: 160%
@@ -117,6 +169,7 @@
 			color: #6A6A6A 
 			font-size: 16px
 			line-height: 160%
+
 	&__title::after
 		content: ''
 		width: 320px
@@ -138,6 +191,7 @@
 		color: #6A6A6A
 		font-size: 20px
 		text-align: right
+
 	&__buttons
 		display: none
 		align-items: center
@@ -156,14 +210,15 @@
 			width: 35px
 			text-align: center
 
+
+// Корзина btn!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .btn-minus
-	background: url(../../img/delivery/cards/minus_icon.svg) no-repeat 
+	background: url(../../img/delivery/btn/minus_icon.svg) no-repeat 
 	background-position: center
-	// background-size: 50%
+
 .btn-plus			
-	background: url(../../img/delivery/cards/plus_icon.svg) no-repeat
+	background: url(../../img/delivery/btn/plus_icon.svg) no-repeat
 	background-position: center
-	// background-size: 50%
 
 .btn-by
 	background-color: #E3C597
@@ -182,6 +237,8 @@
 		line-height: 40px
 		display: block
 
+
+// Нумерация для переключения между страницами!!!!!!!!!!!!!!!!!!!!!
 .btns-pages
 	display: flex
 	align-items: center
@@ -214,5 +271,55 @@
 	border: 1px solid #E3C597
 	color: #E3C597
 
-				
 
+
+// Достоинства ресторана!!!!!!!!!!!!!!
+.menu-cards-bottom
+	font-family: Konung Dan
+	margin: 200px 0 150px 0			
+.menu-cards-bottom-title
+	text-align: center
+	border-bottom: 2px solid #E3C597
+	margin: 10px auto
+	width: 700px
+	span
+		color: #E3C597
+		margin: 0 30px
+		font-size: 24px
+	img
+		margin-bottom: 10px
+
+.menu-cards-bottom-blocks
+	display: flex
+	justify-content: space-between
+
+.menu-cards-bottom-block
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	align-content: center
+	height: 360px
+	width: 408px 
+	svg
+		width: 110px
+		margin: 0 0 50px 0
+	h4
+		padding: 0 120px
+		text-align: center
+		font-size: 26px
+		line-height: 145%
+
+.menu-cards-bottom-block:hover
+	background: #E3C597
+	background-position: center
+	box-shadow: 0px 4px 20px rgba(33, 34, 28, 0.25)
+	border-radius: 2px
+	svg
+		fill: #fff
+
+.cards-icons
+	display: block
+	width: 110px
+	height: 110px
+	fill: #E3C597
