@@ -52,11 +52,12 @@ $(function () {
  
     $('.menu_btn li').each(function () {
         let link = $(this).find('a').attr('href');
- 
+ console.log(location)
+
         if (cur_url == link) {
             $(this).addClass('current');
         }
-    });
+    }); 
 });
 
 

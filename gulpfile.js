@@ -38,7 +38,6 @@ function scripts(){
 		}))
 		.pipe(gulp.dest('./dist/js'))
 		.pipe(browserSync.stream());
-	
 }
 
 function watch(){
@@ -46,6 +45,7 @@ function watch(){
         server: {
             baseDir: "./"
         },
+        notify: false
         // tunnel: true   
     });
 
