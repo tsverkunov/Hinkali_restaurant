@@ -3,12 +3,13 @@
 
 $(document).ready(function(){
     $('.slider').slick({
+        fade: false,
         arrows: true,
         dots: false,
         adaptiveHeight: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        speed: 1000,
+        speed: 600,
         easing: 'ease',
         infinite: true,
         autoplay: false,
@@ -18,7 +19,7 @@ $(document).ready(function(){
         pauseOnDotsHover: true,
         draggable: true,
         swipe: true,
-        touchTreshold: 20,
+        touchTreshold: 5,
         touchMove: true,
         waitForAnimate: false,
         centerMode: true,
@@ -30,12 +31,9 @@ $(document).ready(function(){
         asNavFor: ".sliderbig"
 
     }); 
-});
-
 
 // slider-big
 
-$(document).ready(function(){
     $('.sliderbig').slick({
         arrows: false,
         fade: true,
@@ -52,10 +50,13 @@ $(function () {
  
     $('.menu_btn li').each(function () {
         let link = $(this).find('a').attr('href');
- console.log(location)
+        let product = '/product.html';
 
         if (cur_url == link) {
             $(this).addClass('current');
+ // для страницы product.html 
+        }else if(cur_url == product) {
+            $('.btn-delivery').addClass('current');
         }
     }); 
 });

@@ -10,7 +10,7 @@
 /* Лента слайдов */
 .slick-track
 	display: flex
-	// align-items: flex-start
+	align-items: flex-start
 /* Слайд */
 .slick-slide
 /* Слайд активный (показывается) */
@@ -91,10 +91,10 @@
 	padding: 0
 
 .slider .slick-arrow.slick-disabled
-	opacity: .2
-// .slider .slick-slide.slick-center
-// 	opacity: 1	
-
+	opacity: .6
+.slider .slick-slide.slick-center
+	opacity: .6	
+	// border: 5px solid $Gold
 // .slider .slick-track
 // 	display: block
 .wrapper-slider
@@ -103,7 +103,14 @@
 
 
 
+
 // sliderbig!!!!!!!!!!!!!!!!!
 .sliderbig 
+	position: relative
+	padding: 10px 0 0 0  
+
+	img
+		height: 100%
+		width: 100%
 	&__item 
 
