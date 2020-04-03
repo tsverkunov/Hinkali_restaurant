@@ -10,7 +10,7 @@
 /* Лента слайдов */
 .slick-track
 	display: flex
-	align-items: flex-start
+	align-items: center
 /* Слайд */
 .slick-slide
 /* Слайд активный (показывается) */
@@ -42,11 +42,11 @@
 /* Конкретный слайдер */
 .slider
 	position: relative
-	padding: 10px 0 0 0  
+	margin: 4px 0 0 0  
 
 	img
 		height: 110px
-		width: 95%
+		width: 100%
 .slider .slick-arrow
 	position: absolute
 	top: 50%
@@ -58,6 +58,8 @@
 	border: 0
 
 .slider .slick-slide
+	margin: 5px  
+
 
 .slider .slick-arrow.slick-prev
 	left: 15px	
@@ -93,8 +95,9 @@
 .slider .slick-arrow.slick-disabled
 	opacity: .6
 .slider .slick-slide.slick-center
+	transform: scale(.93)
 	opacity: .6	
-	// border: 5px solid $Gold
+	outline: 5px solid darken($Gold, 20%)
 // .slider .slick-track
 // 	display: block
 .wrapper-slider

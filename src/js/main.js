@@ -139,7 +139,7 @@ document.querySelector('.btns-pages').addEventListener('click', e => {
   const targetClassList = target.classList;  // массив классов цели, на которую мы кликнули
   const allNumPages = [ ...document.querySelectorAll('.num-page')];  // массив всех нумерованых блоков (блоки с классом .num-page), оператор '...' здесь не просто так
   const activePageNumber = allNumPages.findIndex(i => i.classList.contains('num-active'));  // номер (индекс) ранее выбранной страницы
-console.log((activePageNumber - allNumPages.length + 1));
+// console.log((activePageNumber - allNumPages.length + 1));
   switch(true) {  // этот оператор смотрит на какую кнопку мы кликнули
     case targetClassList.contains('btn-left'): return activePageNumber && setNum(-1, true);  // если кликнули на кнопку влево
     case targetClassList.contains('btn-right'): return (activePageNumber - allNumPages.length + 1) && setNum(1, true);  // если кликнули на кнопку вправо
@@ -156,4 +156,8 @@ console.log((activePageNumber - allNumPages.length + 1));
   }
 
 });
+
+
+
+
 
