@@ -337,33 +337,36 @@
 .map 
 	display: flex
 	align-items: center
-	background: url(../../img/footer/background_map.png) no-repeat
+	// background: url(../../img/footer/background_map.png) no-repeat
 	background-size: cover
 	background-position: center
 	height: 650px
 	position: relative
 	&__visit-card
+		display: flex
+		flex-direction: column
+		justify-content: center
+		position: absolute
+		top: calc(50% - 200px)
+		left: 140px
 		width: 509px
 		height: 400px
 		background: #FFF
 		box-shadow: 0px 4px 25px rgba(33, 34, 28, 0.3)
 		border-radius: 2px
-		margin: 0 0 0 150px
-		padding: 69px 0 0 60px
-
 
 	&__title 
 		font-family: Konung Dan
 		font-size: 36px
 		line-height: 145%
-		margin: 0 0 60px 0
+		margin: 0 0 40px 60px		
 
 	&__phone 
 		display: flex
 		justify-self: left
 		font-size: 22px
 		line-height: 40px
-		margin: 0 0 37px 0
+		margin: 0 0 37px 60px		
 		a
 			text-decoration: none
 			color: $Black		
@@ -374,20 +377,20 @@
 		justify-self: left
 		font-size: 20px
 		line-height: 36px
-		margin: 0 0 42px 0
+		margin: 0 0 42px 60px		
 		img
 			padding: 0 15px 6px 0
 	&__timetable 
 		font-size: 18px
-		line-height: 32px
+		line-height: 32px		
 		span
 			color: $Gold
-			margin: 0 20px 0 0 
-	&__pin
-		position: absolute
-		content: ''
-		top: 32%
-		left: 67%
+			margin: 0 20px 0 60px
+	// &__pin
+	// 	position: absolute
+	// 	content: ''
+	// 	top: 32%
+	// 	left: 67%
 
 // Footer_start!!!!!!!!!!!!!!!!!!!!!!!
 .main-footer
